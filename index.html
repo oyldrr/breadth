@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>breadth</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="colored">b</span>read<span class="colored">th</span></h1>
+            <p>Focus. Read. Accelerate.</p>
+        </header>
+        <textarea id="textInput"
+            placeholder="Paste or type a text here to start your speed reading journey..."></textarea>
+        <div class="controls">
+            <input type="number" id="wpmInput" placeholder="WPM (words/min)" value="200" min="50" max="2000" />
+            <button id="startBtn">Start</button>
+        </div>
+
+
+        <div id="savedTextsWrapper">
+            <h2 id="savedTextsTitle">Previous Texts</h2>
+            <div id="savedTextsContainer"></div>
+        </div>
+    </div>
+
+
+    <div id="modal" class="hidden" aria-modal="true" role="dialog" tabindex="-1">
+        <div id="modalContent">
+            <div id="modalWordDisplay">Ready when you are</div>
+        </div>
+    </div>
+    <div class="modal-bottom-line hidden"></div>
+    <div id="modalControls" aria-label="Reading control panel" role="region" tabindex="0" class="hidden">
+        <input type="color" id="bgColorPicker" title="Background Color (B)" value="#000000" />
+        <input type="color" id="textColorPicker" title="Text Color (T)" value="#ffffff" />
+        <select id="fontSizeSelect" title="Font Size (F)">
+            <option value="30">30px</option>
+            <option value="40">40px</option>
+            <option value="50">50px</option>
+            <option value="60" selected>60px</option>
+            <option value="70">70px</option>
+            <option value="80">80px</option>
+            <option value="90">90px</option>
+            <option value="100">100px</option>
+        </select>
+        <button id="prevBtn" title="Previous (Left Arrow)"><i class="fas fa-backward"></i></button>
+        <button id="toggleBtn" title="Play/Pause (Space)"><i class="fas fa-pause" id="playPauseIcon"></i></button>
+        <button id="nextBtn" title="Next (Right Arrow)"><i class="fas fa-forward"></i></button>
+        <button id="fullscreenBtn" title="Fullscreen (Enter)"><i class="fas fa-expand"></i></button>
+        <button id="hideControlsBtn" title="Hide Controls (H)"><i class="fas fa-eye-slash"></i></button>
+        <button id="closeModalBtn" title="Close (Esc)"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div id="errorPopup">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span id="errorText">Please enter a text.</span>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
