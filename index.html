@@ -12,16 +12,22 @@
 </head>
 
 <body>
+    <div id="globalDropOverlay" class="hidden">
+        <div class="drop-message">Drop PDF to read</div>
+    </div>
+
     <div class="container">
         <header>
             <h1><span class="colored">b</span>read<span class="colored">th</span></h1>
             <p>Focus. Read. Accelerate.</p>
         </header>
-        <textarea id="textInput"
-            placeholder="Paste or type a text here to start your speed reading journey..."></textarea>
+
+        <textarea id="textInput" <div id="selectStartContainer"></div>
+
         <div class="controls">
-            <input type="number" id="wpmInput" placeholder="WPM (words/min)" value="200" min="50" max="2000" />
-            <button id="startBtn">Start</button>
+            <input type="number" id="wpmInput" placeholder="WPM" min="50" value="200" max="2000">
+            <button id="editTextBtn" class="hidden"><i class="fas fa-caret-left"></i> Edit Text</button>
+            <button id="startBtn">Start <i class="fas fa-caret-right"></i></button>
         </div>
 
 
@@ -34,14 +40,18 @@
 
     <div id="modal" class="hidden" aria-modal="true" role="dialog" tabindex="-1">
         <div id="modalContent">
-            <div id="modalWordDisplay">Ready when you are</div>
+            <div id="modalWordDisplay"></div>
         </div>
     </div>
-    <div class="modal-bottom-line hidden"></div>
+
+    <div class="modal-bottom-line hidden">
+    </div>
+
     <div id="modalControls" aria-label="Reading control panel" role="region" tabindex="0" class="hidden">
         <input type="color" id="bgColorPicker" title="Background Color (B)" value="#000000" />
         <input type="color" id="textColorPicker" title="Text Color (T)" value="#ffffff" />
         <select id="fontSizeSelect" title="Font Size (F)">
+            <option value="20">20px</option>
             <option value="30">30px</option>
             <option value="40">40px</option>
             <option value="50">50px</option>
@@ -64,9 +74,25 @@
         <span id="errorText">Please enter a text.</span>
     </div>
 
+    <div id="confirmModal" class="hidden">
+        <div class="confirm-modal-content">
+            <p>Are you sure? If you edit the text, you will lose your current reading progress.</p>
+            <div class="confirm-modal-buttons">
+                <button id="confirmYesBtn">Yes</button>
+                <button id="confirmCancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="globalLoader" class="loader hidden">
+        <div class="spinner"></div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"
+        integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
