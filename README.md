@@ -103,10 +103,8 @@ Use the visual buttons for all controls as well.
 ---
 
 ## 🖼️ Screenshots
-
-<!-- Add image links here if available -->
-<!-- Example: -->
-<!-- ![breadth screenshot](screenshots/demo.png) -->
+<img width="1944" height="1258" alt="Main Interface" src="https://github.com/user-attachments/assets/cb4e7b0b-1ae5-4c41-8405-3cb52c59b57a" />
+<img width="1944" height="1258" alt="RSVP Screen" src="https://github.com/user-attachments/assets/6c7ff447-f3bf-478d-8f1c-5e17ee8fc811" />
 
 ---
 
