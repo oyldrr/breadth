@@ -1,43 +1,179 @@
-# Speed Reading Web App
+# 📖 breadth - Speed Reading Web Application
 
-A minimal and modern speed reading application built with **HTML**, **CSS**, and **jQuery**.
+**breadth** is a modern, open-source speed-reading web application designed to enhance reading efficiency using **Rapid Serial Visual Presentation (RSVP)**. By displaying words one at a time at a user-defined speed, breadth helps users read faster while maintaining focus.
 
-## Features
+With features like PDF text extraction, customizable display settings, and progress tracking, **breadth** is perfect for students, professionals, or anyone looking to accelerate their reading.
 
-- Rapid word-by-word text display with adjustable reading speed (WPM).
-- Saves previously entered texts in **localStorage** for easy access without login.
-- Clean, minimal, and user-friendly interface focusing on usability.
-- Fullscreen reading mode for distraction-free experience.
-- Controls for play/pause, next/previous word, font size, background and text color customization.
-- Responsive design for desktop and mobile use.
-
-## Getting Started
-
-Just open the `index.html` file in any modern browser or visit the live demo hosted on GitHub Pages.
-
-## How to Use
-
-1. Paste or type the text you want to read.
-2. Set your preferred reading speed (words per minute).
-3. Click **Start** to begin the speed reading session.
-4. Use controls to pause, navigate, or customize appearance.
-5. Previously used texts are saved automatically and listed for quick access.
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- jQuery
-
-## Future Plans
-- Direct PDF upload support.
-- Ability to continue reading from the last word.
-- Select any word within the text to resume reading from that point.
-
-## License
-
-This project is licensed under the MIT License.
+🌐 **Live Demo**: [take a breadth](https://oyldrr.github.io/breadth)
 
 ---
 
-Made with ❤️ and a bit of AI assistance.
+## 🚀 Features
+
+- **RSVP Reading Mode**  
+  Displays words sequentially at a customizable speed (minimum 50 WPM) to boost reading speed and focus.
+
+- **PDF Text Extraction**  
+  Drag-and-drop PDF files to extract text for immediate reading using `pdf.js`.
+
+- **Customizable Interface**  
+  Adjust font size (20px to 100px), background color, and text color for a personalized experience.
+
+- **Progress Tracking**  
+  Save reading progress and manage previously saved texts with local storage, including last-read word and timestamp.
+
+- **Word Selection**  
+  Choose a specific starting word to begin reading from any point in the text.
+
+- **Responsive Design**  
+  Optimized for seamless use on both desktop and mobile devices.
+
+- **Interactive Controls**  
+  Play, pause, skip forward/backward, toggle fullscreen, and hide controls using keyboard shortcuts or on-screen buttons.
+
+- **Error Handling**  
+  User-friendly error messages for invalid inputs or unsupported file types.
+
+---
+
+## 🛠️ Installation
+
+breadth is a **client-side web application** that runs in any modern web browser without server-side dependencies.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/oyldrr/breadth.git
+```
+
+### 2. Open the Application
+
+Navigate to the project directory and open `index.html` in your browser (Chrome, Firefox, or Edge recommended).
+
+### 3. Dependencies
+
+No local installation required. breadth uses CDN-hosted libraries:
+
+- [jQuery](https://jquery.com/) – DOM manipulation
+- [Font Awesome](https://fontawesome.com/) – Icons
+- [pdf.js](https://mozilla.github.io/pdf.js/) – PDF text extraction
+
+---
+
+## 📚 Usage
+
+### 🔤 Input Text
+
+- Paste text into the provided textarea  
+- **or** drag-and-drop a PDF file to extract text automatically.
+
+### ⚙️ Configure Settings
+
+- Set reading speed (Words Per Minute)
+- Customize font size, background color, and text color via the control panel
+
+### ▶️ Start Reading
+
+- Click **Start** to enter RSVP mode
+- Optionally select a specific word to begin from
+
+### 🎛️ Navigate and Control
+
+#### ⌨️ Keyboard Shortcuts
+
+- `Space` – Play/Pause reading  
+- `← / →` – Previous/Next word  
+- `Enter` – Toggle fullscreen  
+- `H` – Hide controls  
+- `Esc` – Close reading modal  
+- `B` – Open background color picker  
+- `T` – Open text color picker  
+- `F` – Focus font size selector
+
+#### 🖱️ On-screen Controls
+
+Use the visual buttons for all controls as well.
+
+### 💾 Manage Texts
+
+- Save texts to local storage
+- View them under **Previous Texts**
+- Delete or continue from last-read word
+
+---
+
+## 🖼️ Screenshots
+
+<!-- Add image links here if available -->
+<!-- Example: -->
+<!-- ![breadth screenshot](screenshots/demo.png) -->
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to improve **breadth**!
+
+### Steps:
+
+1. Fork the repository  
+2. Create a new branch  
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit  
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to your branch  
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a Pull Request with a clear description
+
+📄 Please read `CONTRIBUTING.md` for detailed guidelines.
+
+---
+
+## 🐞 Reporting Issues
+
+Found a bug or have a feature request?  
+Please open an issue on the [GitHub Issues page](https://github.com/oyldrr/breadth/issues).
+
+---
+
+## ⚠️ Known Issues
+
+- PDF extraction may fail for large or complex PDFs due to limitations in `pdf.js`.
+- Limited support for older browsers (e.g., Internet Explorer 11) due to modern JavaScript features.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+Built with ❤️ using:
+
+- [jQuery](https://jquery.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [pdf.js](https://mozilla.github.io/pdf.js/)
+
+Inspired by classic speed-reading techniques to enhance productivity and focus.
+
+---
+
+## 📬 Contact
+
+For questions or feedback, feel free to reach out:  
+📧 **oyldrr@gmail.com**
+
+---
+
+**Thank you for using breadth!**  
+_Accelerate your reading today._
