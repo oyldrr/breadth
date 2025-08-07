@@ -1,5 +1,13 @@
 # 📖 breadth - Speed Reading Web Application
 
+---
+
+## 🖼️ Screenshots
+<img width="1944" height="1258" alt="Main Interface" src="https://github.com/user-attachments/assets/cb4e7b0b-1ae5-4c41-8405-3cb52c59b57a" />
+<img width="1944" height="1258" alt="RSVP Screen" src="https://github.com/user-attachments/assets/6c7ff447-f3bf-478d-8f1c-5e17ee8fc811" />
+
+---
+
 **breadth** is a modern, open-source speed-reading web application designed to enhance reading efficiency using **Rapid Serial Visual Presentation (RSVP)**. By displaying words one at a time at a user-defined speed, breadth helps users read faster while maintaining focus.
 
 With features like PDF text extraction, customizable display settings, and progress tracking, **breadth** is perfect for students, professionals, or anyone looking to accelerate their reading.
@@ -99,12 +107,6 @@ Use the visual buttons for all controls as well.
 - Save texts to local storage
 - View them under **Previous Texts**
 - Delete or continue from last-read word
-
----
-
-## 🖼️ Screenshots
-<img width="1944" height="1258" alt="Main Interface" src="https://github.com/user-attachments/assets/cb4e7b0b-1ae5-4c41-8405-3cb52c59b57a" />
-<img width="1944" height="1258" alt="RSVP Screen" src="https://github.com/user-attachments/assets/6c7ff447-f3bf-478d-8f1c-5e17ee8fc811" />
 
 ---
 
